@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naven London</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./asscets/favicon-32x32.png" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Lord Icon -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <!-- Link Google font -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="upper-logo">
+            <img src="./asscets/logo.webp" class="logo" alt="logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Men's Collection</a></li>
+                <li><a href="#">Track Your Order</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="upper-cart">
+            <div class="count">0</div>
+            <button class="cart" id="openCart">
+                <lord-icon src="https://cdn.lordicon.com/uisoczqi.json" trigger="loop" delay="1500"
+                    colors="primary:#ffffff,secondary:#ffffff" style="width:40px;height:40px">
+                </lord-icon>
+            </button>
+        </div>
+    </header>
+
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="closeCart" class="close-btn">X</button>
+        </div>
+        <p class="empty">Your cart is empty</p>
+    </div>
+
+
+
+    <!-- SLIDER -->
+    <section class="upper-slider">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img class="slider" src="./asscets/slider.webp" alt="">
+                    <div class="slide-text">
+                        <h1>Naven London</h1>
+                        <p>UNIQUE FASHION AT AFFORDABLE PRICES</p>
+                        <button class="btn">Shop All</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <div class="product-grid">
+
+    <!-- CARD 1 -->
+    <div class="product-card">
+        <img src="./asscets/s1.jpg" alt="Product Image">
+        <h3>Stylish Cashmere Cardigan</h3>
+        <p class="price">£49.99</p>
+
+        <div class="card-icons">
+            <i class="fa-regular fa-heart fav-icon"></i>
+            <i class="fa-solid fa-cart-plus cart-add"></i>
+        </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="product-card">
+        <img src="./asscets/s2.jpg" alt="Product Image">
+        <h3>Men Button Down Knitted Cardigan</h3>
+        <p class="price">£84.99</p>
+
+        <div class="card-icons">
+            <i class="fa-regular fa-heart fav-icon"></i>
+            <i class="fa-solid fa-cart-plus cart-add"></i>
+        </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="product-card">
+        <img src="./asscets/s3.webp" alt="Product Image">
+        <h3>Cotton Quarter-Zip Sweater</h3>
+        <p class="price">£39.99</p>
+
+        <div class="card-icons">
+            <i class="fa-regular fa-heart fav-icon"></i>
+            <i class="fa-solid fa-cart-plus cart-add"></i>
+        </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="product-card">
+        <img src="./asscets/s4.jpg" alt="Product Image">
+        <h3>100% Cashmere Hooded Sweater</h3>
+        <p class="price">£98.99</p>
+
+        <div class="card-icons">
+            <i class="fa-regular fa-heart fav-icon"></i>
+            <i class="fa-solid fa-cart-plus cart-add"></i>
+        </div>
+    </div>
+
+</div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- App JS -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
